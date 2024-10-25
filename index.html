@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- swiper-carrossel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <title>Nicoly Books</title>
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao">
+                <label for="menu" class="container__rotulo">
+                    <span class="cabecalho__menu-hamburguer container__imagem"></span>
+                </label>
+
+                <ul class="lista__menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Programação</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Front-end</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infraestrutura</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a></li>
+                </ul>    
+
+                <a href="#"><img class="container__imagem" src="img/livros/NB.svg" alt="logo alura books"></a>
+                <h1 class="container__titulo"><b class="container__titulo--negrito">Nicoly</b>Books</h1>
+            </div>
+
+            <ul class="opcoes">
+
+                <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+                <label for="opcoes-menu" class="opcoes__rotulo">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+
+                <ul class="lista__menu">
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">POPULARES</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">RECENTES</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">FAÇA VOCÊ MESMO</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">DIARIO DE UM BANANA</a></li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">SOBRE O AUTOR</a></li>
+                </ul>    
+
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+            </ul>
+
+            <div class="container">
+                <a href="#" class="container__link">
+                    <img class="container__imagem container__imagem--coracao" src="img/Favoritos.svg" alt="Meus favoritos"></a>
+                <a href="#" class="container__link">
+                    <img class="container__imagem" src="img/Compras.svg" alt="Carrinho de compras">
+                    <p class="container__texto">Minha sacola</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img class="container__imagem" src="img/Usuario.svg" alt="meu perfil">
+                    <p class="container__texto">Meu perfil</p>
+                </a>
+            </div>
+        </header>
+
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        </section>
+
+        <!-- 1º carrosel -->
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/livros/1banana.jpg" alt="livro sobre apache ApacheKafka"></div>
+                        <div class="swiper-slide"><img src="img/livros/2banana.jpg" alt="livro sobre liderança"></div>
+                        <div class="swiper-slide"><img src="img/livros/3banana.jpg" alt="livro sobre javascript"></div>
+                        <div class="swiper-slide"><img src="img/livros/4banana.jpg" alt="livro sobre Front-end"></div>
+                        <div class="swiper-slide"><img src="img/livros/5banana.jpg" alt="livro sobre portugol"></div>
+                        <div class="swiper-slide"><img src="img/livros/6banana.jpg" alt="livro sobre Acessibilidade web"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                
+                <div class="card">
+                <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-livro">Diario de um Banana  - Apertem os cintos</h2>
+                            <p class="descricao__texto">O livro se passa depois que a família Heffley, chega de viagem de um resort tropical, chamado Isla de Corales.</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img/livros/apertaai.jpg" alt="imagem angular" class="descricao__imagem">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="botoes__ancora" href="#">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2º carrosel -->
+        <section class="carrossel"> 
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+            <!-- Slider main container -->
+            <div class="carrossel__container">
+                
+                <div class="swiper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/livros/7banana.jpg" alt="livro sobre portugol"></div>
+                        <div class="swiper-slide"><img src="img/livros/8banana.jpg" alt="livro sobre Acessibilidade web"></div>
+                        <div class="swiper-slide"><img src="img/livros/9banana.jpg" alt="livro sobre apache ApacheKafka"></div>
+                        <div class="swiper-slide"><img src="img/livros/10banana.jpeg" alt="livro sobre liderança"></div>
+                        <div class="swiper-slide"><img src="img/livros/11banana.jpg" alt="livro sobre javascript"></div>
+                        <div class="swiper-slide"><img src="img/livros/12banana.jpg" alt="livro sobre Front-end"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="card">
+                <!-- 1ª linha -->
+                    <div class="card__descricao">
+                        <!-- 1ª coluna -->
+                        <div class="descricao">
+                            <img class="estrelinhas" src="img/Estrelinhas.svg" alt="">
+                            <h3 class="descricao__titulo">Autor do Mês</h3>
+                            <h2 class="descricao__titulo-livro">Jeff Kinney</h2>
+                            <p class="descricao__texto">Jeffrey Patrick Kinney é um escritor e cartunista norte-americano cujo trabalho ficou notável após escrever a série de livros chamada Diário de Um Banana. Nessa série, Kinney traz a história de quando era adolescente que passa por muitos contratempos durante o ensino</p>
+                        </div>
+                        <!-- 2ª coluna -->
+                        <img src="img/livros/autorj.jpg" alt="imagem angular" class="descricao__imagem">
+                    </div>
+                    <!-- 2ª linha -->
+                    <div class="card__botoes">
+                        <!-- 1ª coluna -->
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritos"></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho"></li>
+                        </ul>
+                        <!-- 2ª coluna -->
+                        <a class="botoes__ancora" href="#">Saiba mais</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
+            <ul class="topicos__lista">
+                <li class="topicos__item"><a class="topicos__link" href="#">Diario</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">Diario de um Banana</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">teens</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">wimpy kid</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">infantil</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">historia</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">jeff kinney</a></li>
+                <li class="topicos__item"><a class="topicos__link" href="#">infanto-juvenil</a></li>
+            </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__descricao">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+                <input type="email" class="contato__email" placeholder="Cadastre seu e-mail">
+        </section>
+
+       
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView:3,
+
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+
+          });
+        </script>
+    </body>
+</html>
